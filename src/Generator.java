@@ -55,7 +55,7 @@ public class Generator {
         return minK;
     }
 
-    public void backtrack(char[][] gen, boolean[][][][] unviable) {
+    public void fillNextPixel(char[][] gen, boolean[][][][] unviable) {
 /*
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < gen.length; i++) {
@@ -133,7 +133,7 @@ public class Generator {
                 }
             }
         }
-        backtrack(gen, unviable);
+        fillNextPixel(gen, unviable);
     }
 
     public char[][] generate(int width, int height) {
@@ -155,11 +155,7 @@ public class Generator {
             }
         }
 
-        backtrack(gen, unviable);
-
-        // try starting from top right and do a sudoku style backtracking
-        // algorithm
-
+        fillNextPixel(gen, unviable);
         return gen;
     }
 
