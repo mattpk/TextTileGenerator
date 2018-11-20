@@ -1,6 +1,6 @@
 This procedural text tile generator takes a text "tile", and extrapolates it to a larger image using local similarity. Every N*N square in the output must appear in the input.
 
-This spaghetti code was inspired by the readme found in https://github.com/mxgmn/WaveFunctionCollapse.
+This project was inspired by the readme found in https://github.com/mxgmn/WaveFunctionCollapse.
 
 Examples:
 ```
